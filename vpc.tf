@@ -52,4 +52,5 @@ resource "aws_route" "natrt"{
 resource "aws_route_table_association" "rt2ass" {
   subnet_id      = aws_subnet.sn2.id
   route_table_id = aws_route_table.rt2.id
-} 
+}
+ code is devoloped by ishaan
