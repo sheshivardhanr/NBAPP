@@ -1,11 +1,13 @@
 resource "aws_vpc" "vpc1"{
 	cidr_block=var.v_vpc_cidr
-	tags=merge(var.v_comm_tags,{"Name"="MYSheshivardhan"})
+	tags=merge(var.v_comm_tags,{"Name"="Sheshivardhan"})
 }
 resource "aws_eip" "myeip"{
-	count=0
+	count=2
 }
-
+resource "aws_eip" "uoreip"{
+	count=30
+}
 resource "aws_subnet" "sn1"{
 	cidr_block=var.v_sn1_cidr
 	vpc_id=aws_vpc.vpc1.id
