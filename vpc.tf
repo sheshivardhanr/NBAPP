@@ -1,3 +1,5 @@
+resource harsha {
+}
 resource "aws_vpc" "vpc1"{
 	cidr_block=var.v_vpc_cidr
 	tags=merge(var.v_comm_tags,{"Name"="MYSheshivardhan"})
